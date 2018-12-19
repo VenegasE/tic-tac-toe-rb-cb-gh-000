@@ -34,7 +34,7 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
-  if index.between?(0,8) && !position_taken(board,index)
+  if index.between?(0,8) && !position_taken?(board,index)
     true
   else
     false
@@ -118,7 +118,7 @@ end
 
 def play(board)
   player = current_player(board)
-  turn(board, player)
+  turn(board,player)
   if over?(board)
     winner = winner(board)
     puts "Congratulations #{winner}! You have won!"

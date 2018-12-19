@@ -26,7 +26,7 @@ def move(board, index, player)
 end
 
 def position_taken?(board, index)
-  if board[index] == " " 
+  if board[index] == " "
     false
   else
     true
@@ -125,4 +125,3 @@ def play(board)
     play(board)
   end
 end
-  
